@@ -1,0 +1,41 @@
+:root{
+    --cor-azul-claro:#5DADE2 ;
+    --cor-azul-escuro:#008080 ;
+    --cor-azul-destaque:#4ECDC4 ;
+    --cor-azul-branco:#d3eddc ;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.cards_doug{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: row;
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+#contato_reb{
+    margin-top: 10px;
+    margin: 20px;
+    
+}
+
+.rodape_douglas{
+    background-color: var(--cor-azul-branco);
+    margin-top: 15px;
+    width: 100%;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.rodape_douglas a{
+    text-decoration: none;
+}
