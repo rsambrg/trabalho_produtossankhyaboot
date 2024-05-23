@@ -1,0 +1,84 @@
+:root {
+    --cor-azul-claro: #5DADE2;
+    --cor-azul-escuro: #008080;
+    --cor-azul-destaque: #4ECDC4;
+    --cor-azul-branco: #d3eddc;
+}
+.card img{
+    transition: filter 0.3s ease-in-out;
+    filter: saturate(80%);
+}
+  
+.card img:hover{
+    filter: saturate(100%);
+}
+
+.card{
+    transition: transform 0.2s ease-in-out;
+}
+
+@keyframes balancar {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+}
+
+.card:hover {
+    animation: balancar 0.5s;
+}
+
+
+.cards_doug {
+    padding: 1vw;
+    background-color: var(--cor-azul-destaque);
+}
+
+header {
+    a:hover{
+        scale: 1.2;
+    }
+}
+
+
+
+#hero_reb {
+    box-shadow: 0px 0px 10px rgba(31, 3, 55, 0.474);
+    background-color: var(--cor-azul-branco);
+
+    button {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        border-style: outset;
+        border-color: silver;
+        border-width: 1px;
+    }
+    button:hover{
+        color: yellow;
+        scale: 1.5;
+        transition: all 0.3s;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        background-image: linear-gradient(to right,#0080805e, #5DADE2);
+    }
+    button:active {
+        color: red;
+        font-weight: bold;
+        background-color: #444;
+        transform: scale(1.1);
+        box-shadow: none;
+        background-image: linear-gradient(to right,#ff00cc #3333ff);
+        transform: rotate(360deg);
+        background-clip: text;
+        color: transparent;
+        transition: background-position 0.3s;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+    }
+}
