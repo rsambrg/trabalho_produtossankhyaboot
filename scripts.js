@@ -36,7 +36,7 @@ $( document ).ready(function() {
     let bannerSection = $('#hero_reb');
     let aboutSection = $('#hero_reb');
     let servicesSection = $('#features_reb');
-    let teamSection = $('#prices_doug');
+    let teamSection = $('#prices-doug');
     let portfolioSection = $('#mainSlider');
     let contactSection = $('#contato_reb');
   
